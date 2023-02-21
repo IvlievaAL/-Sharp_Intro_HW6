@@ -5,17 +5,20 @@
 1, -7, 567, 89, 223-> 3*/
 System.Console.WriteLine("How many numbers you want to enter: "); 
 int M = Int32.Parse(System.Console.ReadLine());
-int [] ToGetMArray ()
+ToCountPositiveNumbersInMArray (M);
+
+void ToCountPositiveNumbersInMArray (int M)
 {
     int [] MArray= new int [M];
+    int count=0;
     for (int i=0; i<M; i++)
     {
      System.Console.WriteLine("Enter number: ");
      MArray[i]=Int32.Parse(System.Console.ReadLine());
+     if (MArray[i]>0)
+     {
+        count++;
+     }
     }
-    return MArray;
-}
-int ToCountPositiveNumbersInArray (int [] ToGetMArray)
-{
-    
+    System.Console.WriteLine(count);
 }
