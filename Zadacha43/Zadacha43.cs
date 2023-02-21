@@ -11,4 +11,7 @@ System.Console.WriteLine("Enter b2: ");
 double b2 = Double.Parse(System.Console.ReadLine());
 System.Console.WriteLine("Enter k2: "); 
 double k2 = Double.Parse(System.Console.ReadLine());
-int y
+double x=(b2- b1)/(k1 -k2);
+double y= k1 * x + b1;
+System.Console.WriteLine(x);
+System.Console.WriteLine(y);
